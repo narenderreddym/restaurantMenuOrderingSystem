@@ -1,19 +1,19 @@
-1. Technology Stack Used:
+**1. Technology Stack Used:**
     - Java 17
     - Spring Boot 3.2.2
     - GraphQL
     - In-memory database (such as H2)
 
-Import The project into Intellij Idea
+**Import The project into Intellij Idea**
 
 Step 1 :
 application.properties added h2 data base properties.
 
-Step 2
-Run the application
+**Step 2
+Run the application**
 
-Step 3
-Open below URL and execute below query in H2 data base
+**Step 3
+Open below URL and execute below query in H2 data base**
 http://localhost:8989/h2-console/login.jsp
 
 INSERT INTO menu_item (item_id, item_name, item_category, description, price) VALUES
@@ -21,9 +21,9 @@ INSERT INTO menu_item (item_id, item_name, item_category, description, price) VA
 ('2', 'Dish 2', 'Appetizer', 'Description 2', 8.99),
 ('3', 'Dish 3', 'Dessert', 'Description 3', 12.99);
 
-Step 4: Once completed. Perform below operations
+**Step 4: Once completed. Perform below operations**
 
-1) Queries to fetch a list of all menu items including their attributes.
+**1) Queries to fetch a list of all menu items including their attributes.**
    query getMenuItems{
    getMenuItems {
    itemId
@@ -62,7 +62,7 @@ Step 4: Once completed. Perform below operations
    }
    }
 
-2) Queries to fetch a specific menu item by its itemId.
+**2) Queries to fetch a specific menu item by its itemId.**
    Query:
    query menuItemByID {
    menuByItemID(itemId:"1") {
@@ -86,7 +86,7 @@ Step 4: Once completed. Perform below operations
    }
    }
 
-3) Queries to fetch a specific menu item by its itemId.
+**3) Queries to fetch a specific menu item by its itemId.**
    Query:
    query catagory{
    getMenuItemsByCategory(itemCategory:"Appetizer") {
@@ -112,7 +112,7 @@ Step 4: Once completed. Perform below operations
    }
    }
 
-4)Mutations to place an order with attributes including itemIds and quantities.
+**4)Mutations to place an order with attributes including itemIds and quantities.**
 
 Query:
 
