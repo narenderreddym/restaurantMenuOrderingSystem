@@ -1,0 +1,24 @@
+type Query {
+    orderById(orderId: ID): Order
+    getMenuItems:[MenuItem]!
+    menuByItemID(itemId: ID): MenuItem
+    getMenuItemsByCategory(itemCategory: String!): [MenuItem]!
+}
+
+type Mutation {
+    placeOrder(itemIds: [String], quantities: [Int]): Order
+}
+type Order {
+    orderId: ID
+    totalPrice: Float
+    orderDate: String
+    items: [MenuItem]
+}
+
+type MenuItem {
+    itemId: ID
+    itemName: String
+    itemCategory: String
+    description: String
+    price: Float
+}
