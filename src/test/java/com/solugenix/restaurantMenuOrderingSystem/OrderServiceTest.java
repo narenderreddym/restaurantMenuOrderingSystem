@@ -4,13 +4,11 @@ import com.solugenix.restaurantMenuOrderingSystem.entity.Menu;
 import com.solugenix.restaurantMenuOrderingSystem.entity.Order;
 import com.solugenix.restaurantMenuOrderingSystem.repository.MenuRepository;
 import com.solugenix.restaurantMenuOrderingSystem.repository.OrderRepository;
-import com.solugenix.restaurantMenuOrderingSystem.service.MenuService;
 import com.solugenix.restaurantMenuOrderingSystem.service.OrderService;
 import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,15 +17,15 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.when;
 
-@SpringBootTest
+
 public class OrderServiceTest {
 
-    @Autowired
+    @InjectMocks
     private OrderService orderService;
 
-    @MockBean
+    @Mock
     private MenuRepository menuRepository;
-    @MockBean
+    @Mock
     private OrderRepository orderRepository;
 
     @Test
