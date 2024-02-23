@@ -22,6 +22,7 @@ INSERT INTO menu_item (item_id, item_name, item_category, description, price) VA
 ('3', 'Dish 3', 'Dessert', 'Description 3', 12.99);
 
 **Step 4: Once completed. Perform below operations**
+http://localhost:8989/graphiql?path=/graphql
 
 **1) Queries to fetch a list of all menu items including their attributes.**
    query getMenuItems{
