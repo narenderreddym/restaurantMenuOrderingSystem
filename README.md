@@ -162,13 +162,3 @@ Response:
 }
 }
 
-
-Below items will be implemented in next commit.
-**4. Additional Considerations:**
-
-- Implement validation for input data.
-- Bonus points for implementing features such as:
-- Authentication and authorization mechanisms.
-- Tracking order status (e.g., pending, processing, completed).
-- Using Microservice design, queues etc.
-- Handling inventory management if certain items have limited availability.
